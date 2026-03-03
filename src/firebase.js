@@ -1,3 +1,8 @@
+
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCiIbLJVKY0mVX6Fy1jv5NDGmCL8EkG5SQ",
   authDomain: "whatapp-clone-8a55c.firebaseapp.com",
@@ -14,7 +19,3 @@ export const provider = new GoogleAuthProvider();
 export const db = getFirestore(app);
 
 
-
-import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
